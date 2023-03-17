@@ -1,7 +1,9 @@
 #include <stdio.h>
+
 /**
- * Main - the main function or something 
- * Returns success code 0
+
+ * main - the main function or something 
+ * Return: success code 0
  */
 int main(void)
 {
