@@ -1,17 +1,12 @@
 #include <main.h>
 
 /**
- * print_alphabet - headers goes there
+ * main - headers goes there
  *
- * Return: always 0
+ Return : 0 all the way
 */
-void print_alphabet(void)
+int main(void)
 {
-	char i;
-
-	for(i = 'a'; i<='z'; i++)
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
+	print_alphabet();
+	return (0);
 }
