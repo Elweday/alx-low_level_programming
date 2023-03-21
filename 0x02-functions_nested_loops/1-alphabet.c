@@ -10,14 +10,15 @@ void print_alphabet(void);
 
 int main(void)
 {
-	printf("_putchar\n");
+	print_alphabet();
 	return (0);
 }
 
 void print_alphabet(void)
 {
-	for(int i = 0; i<26; i++)
+	for(int i = 97; i<=122; i++)
 	{
-		_putchar(i);
+		putchar(i);
 	}
+	putchar('\n');
 }
