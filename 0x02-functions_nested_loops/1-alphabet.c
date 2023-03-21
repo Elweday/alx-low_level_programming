@@ -8,11 +8,6 @@
 */
 void print_alphabet(void);
 
-int main(void)
-{
-	return (0);
-}
-
 void print_alphabet(void)
 {
 	int i;
