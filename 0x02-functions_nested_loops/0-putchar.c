@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -10,12 +9,6 @@
 
 int main(void)
 {
-	int i;
-
-	for (i = 97; i <= 122; i++)
-	{
-		putchar((char) i);
-	}
-	putchar('\n');
+	printf('_putchar\n');
 	return (0);
 }
