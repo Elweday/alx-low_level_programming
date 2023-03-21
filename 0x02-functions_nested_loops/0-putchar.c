@@ -1,5 +1,4 @@
 #include <stdio.h>
-using namespace std;
 
 /**
 * main - does stuff 
