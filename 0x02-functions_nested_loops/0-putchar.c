@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* main - does stuff 
-* 
+* main - does stuff
+*
 * Return: 0 always
 */
 
