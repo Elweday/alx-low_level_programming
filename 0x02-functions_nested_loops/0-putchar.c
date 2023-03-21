@@ -6,8 +6,8 @@
 * Return: 0 always
 */
 
-int main(){
-
+int main()
+{
     printf("_putchar\n");
     return (0);
 }
