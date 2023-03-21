@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
- * main - headers goes there
+ * print_alphabet - headers goes there
  *
  * Return: always 0
 */
