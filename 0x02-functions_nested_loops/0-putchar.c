@@ -1,12 +1,21 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
+
 /**
-* main - does stuff
-*
-* Return: 0 always
+ * main - headers goes there
+ *
+ * Return: always 0
 */
+
 int main(void)
 {
-    printf("_putchar\n");
+	int i;
 
-    return (0);
+	for (i = 97; i <= 122; i++)
+	{
+		putchar((char) i);
+	}
+	putchar('\n');
+	return (0);
 }
