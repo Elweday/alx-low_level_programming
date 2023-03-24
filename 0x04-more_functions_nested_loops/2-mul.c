@@ -2,7 +2,8 @@
 
 /**
  * mul - check the code.
- *
+ * @a: An integer to be multiplied with b
+ * @b : An integer to be multipled with a
  * Return: the multiplication of two numbers.
  */
 
