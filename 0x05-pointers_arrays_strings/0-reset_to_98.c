@@ -3,7 +3,7 @@
 
 /**
  * reset_to_98 - the main function or something
- *
+ * @n - stuff
  * Return: success code 0
  */
 
