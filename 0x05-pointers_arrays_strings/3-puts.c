@@ -3,7 +3,7 @@
 
 /**
  * _puts - the main function or something
- * @sre: string to find its length
+ * @str: string to find its length
  * Return: success code 0
  */
 
