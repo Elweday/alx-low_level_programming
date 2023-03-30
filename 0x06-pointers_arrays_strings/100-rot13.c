@@ -8,12 +8,24 @@
  * Return: *s
  */
 
-char *rot13(char *c) {
+char *rot13(char *s)
+{
+	int i;
+	int j;
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (; *c != '\0'; c++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		*c = (((*c - 'a' + 13) % 26) + 'a');
+		for (j = 0; j < 52; j++)
+		{
+			if (s[i] == data1[j])
+			{
+				s[i] = datarot[j];
+				break;
+			}
+		}
 	}
-	return  (c);
+	return (s);
 }
 
