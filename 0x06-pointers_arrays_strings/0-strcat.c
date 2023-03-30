@@ -1,19 +1,30 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * _strcat - the main function or something
- * @dest: stuff
- * @src: second element
- * Return: success code 0
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
+ *
+ * Return: void
  */
-
 char *_strcat(char *dest, char *src)
 {
-	while(*dest != '\0')
+	int i;
+	int j;
+
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		dest ++;	
+		i++;
 	}
-	dest = src;
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+
+	dest[i] = '\0';
+	return (dest);
 }
 
