@@ -60,6 +60,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
+		r = 0;
 		num = _atoi(argv[1]);
 		r += num / 25;
 		num = num % 25;
@@ -67,6 +68,8 @@ int main(int argc, char *argv[])
                 num = num % 10;
 		r += num / 5;
                 num = num % 5;
+		r += num / 2;
+                num = num % 2;
 		r += num;
 		printf("%d\n", r);
 		return (0);
