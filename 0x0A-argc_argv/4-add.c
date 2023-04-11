@@ -66,7 +66,8 @@ int main(int argc, char *argv[])
 			num = _atoi(argv[i]);
 			if (num == 0)
 			{
-				break;
+				printf("Error\n");
+        			return (1);
 			}
 			else 
 			{
@@ -76,6 +77,4 @@ int main(int argc, char *argv[])
 		printf("%d\n", r);
 		return (0);
 	}
-	printf("Error\n");
-	return (1);
 }
