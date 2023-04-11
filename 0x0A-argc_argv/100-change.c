@@ -22,9 +22,9 @@ int main(int argc, char *argv[])
 		r += num / 10;
                 num = num % 10;
 		r += num / 5;
-                num = num % 5;
+		num = num % 5;
 		r += num / 2;
-                num = num % 2;
+		num = num % 2;
 		r += num;
 		printf("%d\n", r);
 		return (0);
