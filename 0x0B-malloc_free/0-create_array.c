@@ -9,15 +9,18 @@
  * Return: Always 0 (Success)
 */
 
-char *create_array(unsigned int size, char c)
+ char *create_array(unsigned int size, char c)
 {
-	char *ptr;
-	char *i;
+	char *str;
+	unsigned int i;
 
-	ptr = malloc(size);
-	for (i = ptr; i < ptr + size; i++)
-	{
-		*i = c
-	}
-	return ptr;
+	str = malloc(sizeof(char) * size);
+
+	if (size == 0 || str == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		str[i] = c;
+	return (str);
 }
+
