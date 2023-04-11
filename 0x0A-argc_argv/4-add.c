@@ -55,20 +55,27 @@ int _atoi(char *s)
 int main(int argc, char *argv[])
 {
 	int r = 0;
+	int num;
 	int i;
 	
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			r += _atoi(argv[i]);
+
+			num = _atoi(argv[i]);
+			if (num == 0)
+			{
+				break;
+			}
+			else 
+			{
+				r += num;
+			}
 		}
 		printf("%d\n", r);
+		return (0);
 	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
-	return (0);
+	printf("Error\n");
+	return (1);
 }
