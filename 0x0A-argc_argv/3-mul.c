@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-		printf("%d\n",stoi(argv[1]) * stoi(argv[2]));
+		printf("%d\n",atoi(argv[1]) * atoi(argv[2]));
 	}
 	else
 	{
