@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
 /**
  * main - adds two positive number
  * @argc: number of arguments
@@ -16,11 +15,11 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		r = 0;
-		num = atoi(argv[1]);
+		num = _atoi(argv[1]);
 		r += num / 25;
 		num = num % 25;
 		r += num / 10;
-                num = num % 10;
+		num = num % 10;
 		r += num / 5;
 		num = num % 5;
 		r += num / 2;
