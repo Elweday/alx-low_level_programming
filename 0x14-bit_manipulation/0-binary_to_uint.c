@@ -29,7 +29,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			num += 1;
 		}
-		index += 1;
+		i += 1;
 	}
 	return (num);
 }
